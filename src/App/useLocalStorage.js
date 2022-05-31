@@ -85,7 +85,7 @@ const actionTypes = {
   success: 'SUCCESS',
   save: 'SAVE',
   sincronize: 'SINCRONIZE',
-}
+};
 
 const reducerObject = (state, payload) => ({
   [actionTypes.error]: {
@@ -101,7 +101,6 @@ const reducerObject = (state, payload) => ({
   },
   [actionTypes.save]: {
     ...state,
-    erroronizeItem: true,
     item: payload,
   },
   [actionTypes.sincronize]: {
